@@ -12,7 +12,6 @@ TinyMCE Local Save
         [HttpPost("FileUpload")]
         public async Task<IActionResult> FileUpload(IFormFile file)
         {
-           
             var random = "";
             var name = file.FileName.ToLower();
             if (file.Length > 0)
@@ -29,3 +28,5 @@ TinyMCE Local Save
         }
     }
 ```
+
+
