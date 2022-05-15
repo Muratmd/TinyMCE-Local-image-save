@@ -34,7 +34,7 @@ Local Save Controller
 SaveTest.cshtml
 
 ```html
-<form method="post" enctype="multipart/form-data" asp-controller="Photo" asp-action="FileUpload">
+<form method="post" enctype="multipart/form-data" asp-controller="LocalSave" asp-action="FileUpload">
     <div class="form-group">
         <div class="col-md-10">
             <p>Upload file:</p>
