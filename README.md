@@ -49,9 +49,22 @@ SaveTest.cshtml
 </form>
 ```
 
-Add Scripts
+Add TinyMCE Scripts
 
 ```
-
+  <script src="https://cdn.tiny.cloud/1/YOUR-APİ/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>  tinymce.init({
+                selector: '#mytextarea',
+                height : "650",
+                plugins: 'code emoticons imagetools preview print autosave save image link media table anchor lists checklist wordcount imagetools paste ',
+                toolbar: 'undo redo | formatselect | ' +
+                  'bold italic backcolor | alignleft aligncenter ' +
+                  'alignright alignjustify | bullist numlist outdent indent | ' +
+                  'removeformat | help'+'|code|'+ '| link image| ',
+                images_upload_url: '/FileUpload',
+                automatic_uploads: true,
+                images_upload_base_path:'\\Images',
+                });
+   </script>
 
 ```
