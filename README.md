@@ -14,7 +14,7 @@ LocalSave Controller
         }
 
         [HttpPost("FileUpload")]
-        public async Task<IActionResult> FileUpload(IFormFile file)do not change TinyMce only accept "file"
+        public async Task<IActionResult> FileUpload(IFormFile file)do not change. TinyMce only accept "file"
         {
             var random = "";
             var name = file.FileName.ToLower();
