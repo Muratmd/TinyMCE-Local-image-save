@@ -79,7 +79,7 @@ TinyMCE Html
 ```html
   <div class="form-group">
      <label asp-for="Your-obje" class="control-label"></label>
-     <textarea asp-for="Your-obje" id="mytextarea" class="form-control"></textarea>
+     <textarea asp-for="Your-obje" id="mytextarea" class="form-control"></textarea> //The field you want to record in your models
       <span asp-validation-for="Your-obje" class="text-danger"></span>
   </div>
 ```
