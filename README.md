@@ -1,9 +1,9 @@
 # TinyMCE Local image save for .net core 5.0
 
-wwwroot/Images
+Add directory wwwroot/images
 
 
-Local Save Controller
+LocalSave Controller
 ```c#
  public class LocalSave : Controller
     {
@@ -20,15 +20,15 @@ Local Save Controller
             var name = file.FileName.ToLower();
             if (file.Length > 0)
             {
-                random = Guid.NewGuid() + name;
-                var filePath = Path.Combine("wwwroot/Images" , random);
+                random = Guid.NewGuid() + name;//create a new name
+                var filePath = Path.Combine("wwwroot/images" , random);/filePath
 
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
                 }
             }
-            return Ok(new {location = random});
+            return Ok(new {location = random});//json data correct for tinymce
         }
     }
 ``` 
@@ -41,7 +41,7 @@ SaveTest.cshtml
     <div class="form-group">
         <div class="col-md-10">
             <p>Upload file:</p>
-            <input type="file" name="file" multiple />
+            <input type="file" name="file" multiple />//file name important
         </div>
     </div>
     <div class="form-group">
@@ -56,7 +56,7 @@ Add in Layout TinyMCE Scripts
 
 ```javascript
 <head>
-  <script src="https://cdn.tiny.cloud/1/YOUR-APİ/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://cdn.tiny.cloud/1/YOUR-APİ/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> //Change api key
   <script>  tinymce.init({
                 selector: '#mytextarea',
                 height : "650",
@@ -67,7 +67,7 @@ Add in Layout TinyMCE Scripts
                   'removeformat | help'+'|code|'+ '| link image| ',
                 images_upload_url: '/FileUpload',
                 automatic_uploads: true,
-                images_upload_base_path:'\\Images',
+                images_upload_base_path:'\\images',
                 });
    </script>
 </head>
