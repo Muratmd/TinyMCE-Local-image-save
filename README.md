@@ -1,5 +1,8 @@
 # TinyMCE Local image save for .net core 5.0
 
+wwwroot/Images
+
+
 Local Save Controller
 ```c#
  public class LocalSave : Controller
