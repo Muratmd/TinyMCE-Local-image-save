@@ -52,6 +52,7 @@ SaveTest.cshtml
 Add TinyMCE Scripts
 
 ```javascript
+<head>
   <script src="https://cdn.tiny.cloud/1/YOUR-APİ/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   <script>  tinymce.init({
                 selector: '#mytextarea',
@@ -66,5 +67,5 @@ Add TinyMCE Scripts
                 images_upload_base_path:'\\Images',
                 });
    </script>
-
+</head>
 ```
