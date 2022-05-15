@@ -51,7 +51,7 @@ SaveTest.cshtml
 
 Add TinyMCE Scripts
 
-```script
+```javascript
   <script src="https://cdn.tiny.cloud/1/YOUR-APİ/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   <script>  tinymce.init({
                 selector: '#mytextarea',
