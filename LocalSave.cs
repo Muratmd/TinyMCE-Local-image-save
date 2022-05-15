@@ -25,3 +25,4 @@
             return Ok(new {location = random});
         }
     }
+ 
