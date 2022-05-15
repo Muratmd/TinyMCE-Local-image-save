@@ -1,6 +1,6 @@
 # TinyMCE-Local-image-save
 
-Local Save
+Local Save Controller
 ```c#
  public class LocalSave : Controller
     {
