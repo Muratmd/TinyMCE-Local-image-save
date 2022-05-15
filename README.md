@@ -21,7 +21,7 @@ LocalSave Controller
             if (file.Length > 0)
             {
                 random = Guid.NewGuid() + name;//create a new name
-                var filePath = Path.Combine("wwwroot/images" , random);/filePath
+                var filePath = Path.Combine("wwwroot/images" , random); //filePath
 
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
@@ -41,7 +41,7 @@ SaveTest.cshtml
     <div class="form-group">
         <div class="col-md-10">
             <p>Upload file:</p>
-            <input type="file" name="file" multiple />//file name important
+            <input type="file" name="file" multiple /> //file name important
         </div>
     </div>
     <div class="form-group">
