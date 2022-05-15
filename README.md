@@ -14,7 +14,7 @@ LocalSave Controller
         }
 
         [HttpPost("FileUpload")]
-        public async Task<IActionResult> FileUpload(IFormFile file)
+        public async Task<IActionResult> FileUpload(IFormFile file)do not change TinyMce only accept "file"
         {
             var random = "";
             var name = file.FileName.ToLower();
@@ -74,7 +74,7 @@ Add in Layout TinyMCE Scripts
 ```
 
 
-TinyMCE Html
+TinyMCE Html add in form
 
 ```html
   <div class="form-group">
