@@ -49,7 +49,7 @@ SaveTest.cshtml
 </form>
 ```
 
-Add TinyMCE Scripts
+Add in Layout TinyMCE Scripts 
 
 ```javascript
 <head>
