@@ -1,5 +1,6 @@
 # TinyMCE-Local-image-save
-TinyMCE Local Save
+
+Local Save
 ```c#
  public class LocalSave : Controller
     {
@@ -30,3 +31,20 @@ TinyMCE Local Save
 ``` 
 
 
+SaveTest.cshtml
+
+```html
+<form method="post" enctype="multipart/form-data" asp-controller="Photo" asp-action="FileUpload">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Upload file:</p>
+            <input type="file" name="file" multiple />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="Upload" />
+        </div>
+    </div>
+</form>
+```
